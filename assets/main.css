@@ -1,0 +1,41 @@
+@import 'https://fonts.googleapis.com/css?family=Monoton|Raleway';
+
+/*
+  Color scheme:
+  http://www.colourlovers.com/palette/4322038/%E6%8A%98%E3%82%8A%E7%B4%99*%E7%BE%8E
+ */
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background-color: #EAE2E3;
+    margin-left: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+#banner {
+    line-height: 1.0;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
+    font-size: 115px;
+    color: #38283C;
+    text-shadow: #BBA4A9 0px 0px 10px;
+}
+
+#y {
+    color: #5C5166;
+}
+
+a {
+    color: #38283C;
+    text-decoration: underline;
+}
+
+.big {
+    font-size: 48px;
+}
