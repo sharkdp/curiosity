@@ -1,6 +1,9 @@
-@import 'https://fonts.googleapis.com/css?family=Monoton|Raleway';
+@import 'https://fonts.googleapis.com/css?family=Monoton|Raleway|Source+Code+Pro';
 
 /*
+  Fonts:
+  https://fonts.google.com/?selection.family=Monoton|Raleway|Source+Code+Pro
+
   Color scheme:
   http://www.colourlovers.com/palette/4322038/%E6%8A%98%E3%82%8A%E7%B4%99*%E7%BE%8E
  */
@@ -38,4 +41,12 @@ a {
 
 .big {
     font-size: 48px;
+}
+
+pre {
+    width: 662px;
+    background-color: #BBA4A9;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    padding: 10px;
 }
