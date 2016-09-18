@@ -54,4 +54,6 @@ pre {
     font-family: 'Source Code Pro', monospace;
     font-size: 30px;
     padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #A2778B;
 }
