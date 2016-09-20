@@ -5,8 +5,6 @@ mkdir dist
 
 cp -r assets/* assets/.htaccess dist
 
-cat "templates/header.html" "levels/index.html" "templates/footer.html" > "dist/index.html"
-
 for dir in levels/level*/; do
     level=$(basename "$dir")
     levelDir="dist/$level"

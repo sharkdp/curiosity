@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>curiositY</title>
+    <meta name="author" content="David Peter">
+    <meta name="description" content="How far does your curiosity take you?">
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+    <h1 id="banner">curiosit<span id="y">Y</span></h1>
+
+    You are being redirected ... <br>
+
+    If the game does not load, <a href="level001/index.html">click here</a>.
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      function redirect() {
+            window.location = "level001/index.html";
+      };
+
+      window.setTimeout(redirect, 1000);
+
+      ga('create', 'UA-39945208-6', 'auto');
+      ga('send', 'pageview', {
+        'hitCallback': redirect
+      });
+
+
+    </script>
+  </body>
+</html>
