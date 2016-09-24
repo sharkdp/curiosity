@@ -15,7 +15,7 @@ for dir in levels/level*/; do
         if [[ $extension == "html" ]]; then
             cat "templates/header.html" "$file" "templates/footer.html" > "$levelDir/$filename"
         else
-            cp "$file" "$levelDir"
+            cp -r "$file" "$levelDir"
         fi
     done
 
