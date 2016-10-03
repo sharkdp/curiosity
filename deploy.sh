@@ -26,3 +26,5 @@ for dir in levels/level*/; do
         popd > /dev/null
     fi
 done
+
+cat "templates/header.html" "levels/finish/eof.html" "templates/footer.html" > "dist/finish/eof.html"
