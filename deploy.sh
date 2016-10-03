@@ -18,4 +18,11 @@ for dir in levels/level*/; do
             cp "$file" "$levelDir"
         fi
     done
+
+    if [[ -e "$levelDir/post-deploy.sh" ]]; then
+        pushd "$levelDir" > /dev/null
+        bash post-deploy.sh
+        rm post-deploy.sh
+        popd > /dev/null
+    fi
 done
