@@ -6,6 +6,7 @@
 import argparse
 import collections
 import re
+import glob
 
 parser = argparse.ArgumentParser()
 parser.add_argument('level', type=int, help='The level number')
@@ -15,13 +16,14 @@ pattern = re.compile('"GET /curiosity/level{:>03}/([^ ]+) [^"]*" 404'.format(arg
 
 names = collections.Counter()
 
-with open("access.log") as log:
-    for line in log.readlines():
-        res = pattern.search(line)
+for logfile in glob.glob("access.log*"):
+    with open(logfile) as log:
+        for line in log.readlines():
+            res = pattern.search(line)
 
-        if res:
-            name = res.groups()[0]
-            names[name] += 1
+            if res:
+                name = res.groups()[0]
+                names[name] += 1
 
 for page, count in names.most_common(20):
     print("{count:<5} {page}".format(count=count, page=page))
