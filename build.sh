@@ -3,7 +3,7 @@
 rm -rf dist
 mkdir dist
 
-cp -r assets/* assets/.htaccess dist
+cp -r assets/* dist
 
 for dir in levels/level*/; do
     level=$(basename "$dir")
@@ -19,10 +19,10 @@ for dir in levels/level*/; do
         fi
     done
 
-    if [[ -e "$levelDir/post-deploy.sh" ]]; then
+    if [[ -e "$levelDir/post-build.sh" ]]; then
         pushd "$levelDir" > /dev/null
-        bash post-deploy.sh
-        rm post-deploy.sh
+        bash post-build.sh
+        rm post-build.sh
         popd > /dev/null
     fi
 done
